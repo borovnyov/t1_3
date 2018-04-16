@@ -1,0 +1,10 @@
+"Script for duplicates searching"
+
+You have 3  comandline arguments:
+ 1) "dir" where you want to search dups 
+ 2) searching mode:
+    name (by names)
+    cont (by content)
+ 3) some.sh - name of generated script for duplicates deleting
+
+Use generaite.sh to create example dir
