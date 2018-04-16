@@ -3,9 +3,14 @@
 read -n 1 -p "Are you sure  to start  (y/[a]): " AMSURE 
 [ "$AMSURE" = "y" ] || exit 
 echo "" 1>&2
+
 if [[ $# = 0 ]]
 then
     echo "No arguments"
+elif ! test $(which md5sum)  
+then
+    echo '"md5sum" not installed'
+    echo 'use "apt" to install'
 else
     
     ##    default equals of arg
